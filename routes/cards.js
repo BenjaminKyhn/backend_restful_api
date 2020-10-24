@@ -10,7 +10,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/random', function(req, res, next) {
     let randomCard = Math.floor(Math.random()*cards.length);
-    res.send(JSON.stringify(cards[randomCard].image));
+    res.send(JSON.stringify(cards[randomCard]));
 });
 
 router.put('/', function(req, res, next) {
